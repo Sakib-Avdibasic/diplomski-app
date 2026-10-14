@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { searchCompany, LOGO_BASE, resolveStudio } from "../api/tmdb";
+import { LOGO_BASE, resolveStudio } from "../api/tmdb";
 import "./StudioSelectPage.css";
 
 const SEED_STUDIOS = [

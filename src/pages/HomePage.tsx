@@ -4,11 +4,9 @@ import {
   getTrendingMovies,
   getHomeShowcase,
   BACKDROP_BASE,
-  POSTER_BASE,
   type TrendingMovie,
   type HomeShowcase,
 } from "../api/tmdb";
-import { shouldUseBillions, formatMoney } from "../utils/formatMoney";
 import "./HomePage.css";
 
 const sections: {
@@ -46,7 +44,6 @@ const HomePage = () => {
   }, []);
 
   const heroMovie = trending.find((m) => m.backdrop_path);
-  const posters = trending.filter((m) => m.poster_path).slice(0, 10);
 
   return (
     <div className="home">
