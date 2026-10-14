@@ -1,0 +1,56 @@
+.genre-bg {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  background: #0a0a0a;
+}
+
+.genre-bg__layer {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  animation: slow-zoom 24s ease-in-out infinite alternate;
+}
+
+.genre-bg__layer--fade-in {
+  animation: fade-in 1s ease forwards, slow-zoom 24s ease-in-out infinite alternate;
+}
+
+.genre-bg__layer--under {
+  opacity: 1;
+}
+
+.genre-bg__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(18, 18, 18, 0.5) 0%,
+    rgba(18, 18, 18, 0.78) 55%,
+    rgba(18, 18, 18, 0.94) 100%
+  );
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slow-zoom {
+  from { transform: scale(1); }
+  to { transform: scale(1.08); }
+}
+
+/* Dark gradient so text stays legible over any still */
+.genre-bg__overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.55) 0%,
+    rgba(0, 0, 0, 0.75) 60%,
+    rgba(0, 0, 0, 0.9) 100%
+  );
+}

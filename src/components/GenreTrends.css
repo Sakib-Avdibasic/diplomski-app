@@ -1,0 +1,78 @@
+.genre-trends {
+  min-height: 100vh;
+}
+
+.genre-trends__panel {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 7rem 1.5rem 4rem;
+}
+
+.genre-trends__panel h1 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 3.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  margin: 0 0 2.5rem;
+}
+
+.genre-trends__chart-card {
+  border: 1px solid var(--line);
+  border-radius: 0; /* flush edges, no rounding anywhere */
+  padding: 2rem 1.5rem 1rem;
+  background: rgba(10, 10, 10, 0.7);
+}
+
+.genre-trends__tooltip {
+  background: #0A0A0A;
+  border: 1px solid var(--line);
+  border-radius: 0;
+  padding: 0.9rem 1.1rem;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+}
+
+.genre-trends__tooltip-year {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+.genre-trends__tooltip-total {
+  color: var(--accent);
+  font-weight: 500;
+  margin-bottom: 0.6rem;
+  font-size: 0.8rem;
+}
+
+.genre-trends__tooltip-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.genre-trends__tooltip-list li {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+  color: var(--muted);
+}
+
+.genre-trends__tooltip-empty {
+  color: var(--muted);
+  font-size: 0.78rem;
+  margin: 0;
+}
+
+.genre-trends__progress {
+  margin: 0.75rem 0 0;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--muted);
+  text-align: right;
+}
